@@ -1,0 +1,9 @@
+Versão da urna:<input type="text" (keyup)="receberVersaoUrna($event)">
+
+{{votos.aFavor}}
+<app-interno [versaoUrna]="versao" #votos ></app-interno>
+
+votos a favor: {{votos.aFavor}} Votos a contra:{{votos.contra}}
+
+Total de votos: {{votos.aFavor + votos.contra}}
+
